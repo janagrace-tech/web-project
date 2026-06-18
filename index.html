@@ -2,49 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- This magical line below fixes the mobile zoom issue! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Special Page For You ❤️</title>
     <style>
         body {
-            background-color: #fce3ef; /* Lavender Blush (Soft Valentine Pink) */
+            background-color: #fff0f5; /* Lavender Blush */
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-align: center;
-            padding: 40px 20px;
+            padding: 30px 15px;
             color: #4a4a4a;
         }
         .heart-header {
-            font-size: 3rem;
-            margin-bottom: 10px;
+            font-size: 3.5rem; /* Made the heart bigger */
+            margin-bottom: 5px;
             animation: heartbeat 1.5s infinite;
         }
         h1 {
-            color: #d14949; /* Soft red/rose color */
+            color: #d14949;
+            font-size: 2.2rem; /* Bigger title */
             margin-top: 0;
+            margin-bottom: 5px;
         }
-        p {
+        .subtitle {
             font-size: 1.1rem;
-            line-height: 1.6;
+            margin-bottom: 25px;
+            color: #7a7a7a;
         }
         ul {
             list-style-type: none;
             padding: 0;
-            max-width: 350px;
+            width: 90%; /* Adapts perfectly to phone screens */
+            max-width: 380px; 
             margin: 20px auto;
         }
         li {
             background: white;
-            margin: 12px 0;
-            padding: 15px;
+            margin: 15px 0;
+            padding: 18px 15px; /* Added more breathing room inside the cards */
             border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(209, 73, 73, 0.1);
-            border-left: 5px solid #ffb6c1; /* Light pink accent line */
+            box-shadow: 0 4px 10px rgba(209, 73, 73, 0.12);
+            border-left: 6px solid #ffb6c1;
             font-weight: 500;
+            font-size: 1.1rem; /* Bigger, easier-to-read text */
+        }
+        .hug-text {
+            margin-top: 35px; 
+            font-weight: bold; 
+            color: #d14949;
+            font-size: 1.2rem;
+            padding: 0 10px;
         }
         .footer-love {
-            margin-top: 40px;
-            font-size: 0.9rem;
+            margin-top: 50px;
+            font-size: 0.95rem;
             color: #9b9b9b;
         }
-        /* This makes the top heart gently pulse like a heartbeat! */
         @keyframes heartbeat {
             0% { transform: scale(1); }
             50% { transform: scale(1.1); }
@@ -56,15 +69,15 @@
 
     <div class="heart-header">❤️</div>
     <h1>Hello Hanii!</h1>
-    <p>Specially made for my Baba!:</p>
+    <div class="subtitle">Specially made for my Baba!:</div>
 
     <ul>
         <li>✨ I Miss Youu my Babuuu. Can't wait to see youu!</li>
         <li>🥰 I appreciate everything you do love.</li>
-        <li>💖 I LOVE YOUUUUU🥰 </li>
+        <li>💖 I LOVE YOUUUUU🥰</li>
     </ul>
 
-    <p style="margin-top: 30px; font-weight: bold; color: #d14949;">
+    <p class="hug-text">
         Sending you the biggest hug through this screen! 🧸
     </p>
 
